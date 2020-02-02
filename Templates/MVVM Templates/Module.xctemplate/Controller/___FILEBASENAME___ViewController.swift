@@ -9,11 +9,11 @@
 
 import UIKit
 
-internal class ___VARIABLE_moduleName___ViewController: UIViewController {
+internal class ___VARIABLE_featureName___ViewController: UIViewController {
 
     // MARK: - Public properties -
 
-    var presenter: ___VARIABLE_moduleName___PresenterInterface!
+    var presenter: ___VARIABLE_featureName___PresenterInterface!
 
     // MARK: - Lifecycle -
 
@@ -25,5 +25,5 @@ internal class ___VARIABLE_moduleName___ViewController: UIViewController {
 
 // MARK: - Extensions -
 
-extension ___VARIABLE_moduleName___ViewController: ___VARIABLE_moduleName___ViewInterface {
+extension ___VARIABLE_featureName___ViewController: ___VARIABLE_featureName___ViewInterface {
 }

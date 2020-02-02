@@ -25,7 +25,7 @@ class Template
 
     def self.normal
         Template.new({
-            name: "Module",
+            name: "Feature",
             generate_io: false
         })
     end
