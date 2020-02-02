@@ -3,12 +3,11 @@ require 'fileutils'
 
 class Generator
     include ERB::Util
-    attr_accessor :template, :interface, :complexity
+    attr_accessor :template, :complexity
   
-    def initialize(template_file, template, interface, complexity)
+    def initialize(template_file, template, complexity)
       @template_file = IO.read template_file
       @template = template
-      @interface = interface
       @complexity = complexity
     end
   

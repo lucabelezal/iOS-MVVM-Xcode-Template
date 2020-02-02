@@ -2,12 +2,8 @@ class Template
     attr_accessor :name, :generate_io
 end
 
-class Interface
-    attr_accessor :name
-end
-
 class Complexity
-    attr_accessor :name, :generate_formatter
+    attr_accessor :name
 end
 
 module Initializable
@@ -36,24 +32,6 @@ class Template
 
 end
 
-class Interface 
-    include Initializable
-
-    def self.types
-        [none]
-    end
-
-    def self.default
-        none
-    end
-
-    def self.none
-        Interface.new({
-            name: "None"
-        })
-    end
-end
-
 class Complexity 
     include Initializable
 
@@ -67,7 +45,7 @@ class Complexity
 
     def self.simple
         Complexity.new({
-            name: "Simple"
+            name: "Controller"
         })
     end
 
