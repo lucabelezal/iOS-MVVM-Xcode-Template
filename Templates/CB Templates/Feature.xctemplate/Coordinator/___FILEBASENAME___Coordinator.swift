@@ -17,11 +17,11 @@ internal final class ___VARIABLE_featureName___Coordinator: Coordinator {
 
     // MARK: - Private Property
 
-    private let service: <#T##R___VARIABLE_featureName___ServiceProtocol#>
+    private let service: <##R___VARIABLE_featureName___ServiceProtocol#>
 
     // MARK: - Life Cycle
 
-    internal init(service: <#T##R___VARIABLE_featureName___ServiceProtocol#>) {
+    internal init(service: <##R___VARIABLE_featureName___ServiceProtocol#>) {
         self.service = service
         rootViewController = NavigationController()
 
