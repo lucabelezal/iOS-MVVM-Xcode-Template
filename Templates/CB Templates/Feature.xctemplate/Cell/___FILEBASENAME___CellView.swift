@@ -25,7 +25,7 @@ internal class ___VARIABLE_featureName___CellView: UIView, CellViewModelOwner {
     private let contentView: UIView
 
     // MARK: - Initialize Methods
-    
+
     internal override init(frame: CGRect) {
         contentView = UIView()
         isSelected = false
@@ -62,7 +62,7 @@ extension ___VARIABLE_featureName___CellView: ViewCodable {
             make.left.equalTo(self.layout.left)
             make.right.equalTo(self.layout.right)
         }
-        
+
     }
 
     internal func render() {

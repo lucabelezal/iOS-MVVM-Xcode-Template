@@ -34,7 +34,7 @@ internal enum ___VARIABLE_featureName___Router: Requestable {
         switch self {
         case .example:
             return [
-                "example": "",
+                "example": ""
             ]
         default:
             return nil
