@@ -53,6 +53,11 @@ def generate_service(template, complexity, source_folder, destination_folder)
     generator.save "#{destination_folder}/___FILEBASENAME___Service.swift"
 end
 
+def generate_mvvm(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___Service.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___Service.swift"
+end
+
 def generate(template, complexity)
     source_folder = "#{RESOURCES}/Templates"
     destination_folder = "#{PATH}/#{template.name}.xctemplate/#{complexity.name}"
@@ -65,6 +70,7 @@ def generate(template, complexity)
     generate_coordinator(template, complexity, source_folder, destination_folder)
     generate_router(template, complexity, source_folder, destination_folder)
     generate_service(template, complexity, source_folder, destination_folder)
+    generate_mvvm(template, complexity, source_folder, destination_folder)
 end
 
 def generate_info_plist(template)ma
