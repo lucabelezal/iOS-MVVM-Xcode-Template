@@ -69,7 +69,7 @@ class Complexity
 
     def self.mvvm
         Complexity.new({
-            name: "MVVM"
+            name: "Controller+ViewModel+View"
         })
     end
 

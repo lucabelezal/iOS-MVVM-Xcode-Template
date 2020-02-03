@@ -42,10 +42,10 @@
 			<key>Type</key>
 			<string>popup</string>
 			<key>Default</key>
-			<string>MVVM</string>
+			<string>Controller+ViewModel+View</string>
 			<key>Values</key>
 			<array>
-			    <string>MVVM</string>
+			    <string>Controller+ViewModel+View</string>
 				<string>Controller</string>
 				<string>View</string>
 				<string>Cell</string>
