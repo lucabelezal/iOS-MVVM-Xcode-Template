@@ -36,11 +36,11 @@ class Complexity
     include Initializable
 
     def self.types
-        [action, cell, controller, coordinator, router, service]
+        [action, cell, controller, coordinator, router, service, mvvm, view]
     end
 
     def self.default
-        controller
+        mvvm
     end
 
     def self.action
@@ -58,6 +58,18 @@ class Complexity
     def self.controller
         Complexity.new({
             name: "Controller"
+        })
+    end
+
+    def self.view
+        Complexity.new({
+            name: "View"
+        })
+    end
+
+    def self.mvvm
+        Complexity.new({
+            name: "MVVM"
         })
     end
 

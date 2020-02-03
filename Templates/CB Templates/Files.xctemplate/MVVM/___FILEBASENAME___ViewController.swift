@@ -11,7 +11,7 @@ import Components
 internal class ___VARIABLE_fileName___ViewController: UIViewController, StatefulViewProtocol {
 
     // MARK: - Private Property
-    
+
     private let service: <#___VARIABLE_fileName___ServiceProtocol#>
 
     // MARK: - Life Cicle
@@ -29,7 +29,7 @@ internal class ___VARIABLE_fileName___ViewController: UIViewController, Stateful
     // MARK: - Override Methods
 
     internal override func loadView() {
-        self.view = <#___VARIABLE_fileName___View#>(frame: UIScreen.main.bounds)
+        self.view = ___VARIABLE_fileName___View(frame: UIScreen.main.bounds)
     }
 
     internal override func viewDidLoad() {
