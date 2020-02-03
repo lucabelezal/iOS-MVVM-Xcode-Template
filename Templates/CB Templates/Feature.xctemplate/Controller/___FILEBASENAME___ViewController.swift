@@ -10,9 +10,14 @@ import Components
 
 internal class ___VARIABLE_featureName___ViewController: UIViewController, StatefulViewProtocol {
 
+    // MARK: - Private Property
+
+    private let service: <#___VARIABLE_featureName___ServiceProtocol#>
+
     // MARK: - Life Cicle
 
-    internal init() {
+    internal init(service: <#___VARIABLE_featureName___ServiceProtocol#>) {
+        self.service = service
         super.init(nibName: nil, bundle: nil)
     }
 
