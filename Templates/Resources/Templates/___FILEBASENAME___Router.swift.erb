@@ -14,7 +14,7 @@ internal enum ___VARIABLE_featureName___Router: Requestable {
 
     internal var method: HTTPMethod {
         switch self {
-        case .listCards,
+        case .example:
             return .get
         }
     }
