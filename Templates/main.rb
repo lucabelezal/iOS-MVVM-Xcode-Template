@@ -4,7 +4,7 @@ require 'fileutils'
 require './generator'
 require './parameters'
 
-PATH = "MVVM Templates"
+PATH = "CB Templates"
 RESOURCES = "Resources"
 
 
