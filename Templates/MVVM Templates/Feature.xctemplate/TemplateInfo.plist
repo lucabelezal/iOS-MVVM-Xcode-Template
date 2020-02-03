@@ -46,6 +46,9 @@
 			<key>Values</key>
 			<array>
 				<string>Controller</string>
+				<string>Cell</string>
+				<string>Coordinator</string>
+				<string>Service</string>
 			</array>
 		</dict>
 	</array>

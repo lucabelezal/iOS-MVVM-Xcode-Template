@@ -23,12 +23,24 @@ def generate_view(template, complexity, source_folder, destination_folder)
     generator.save "#{destination_folder}/___FILEBASENAME___View.swift"
 end
 
+def generate_cell_view_model(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___CellViewModel.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___CellViewModel.swift"
+end
+
+def generate_cell_view(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___CellView.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___CellView.swift"
+end
+
 def generate(template, complexity)
     source_folder = "#{RESOURCES}/Templates"
     destination_folder = "#{PATH}/#{template.name}.xctemplate/#{complexity.name}"
     generate_view_controller(template, complexity, source_folder, destination_folder)
     generate_view_model(template, complexity, source_folder, destination_folder)
     generate_view(template, complexity, source_folder, destination_folder)
+    generate_cell_view_model(template, complexity, source_folder, destination_folder)
+    generate_cell_view(template, complexity, source_folder, destination_folder)
 end
 
 def generate_info_plist(template)ma

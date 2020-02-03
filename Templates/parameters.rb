@@ -36,7 +36,7 @@ class Complexity
     include Initializable
 
     def self.types
-        [normal]
+        [simple, normal]
     end
 
     def self.default
@@ -44,6 +44,12 @@ class Complexity
     end
 
     def self.simple
+        Complexity.new({
+            name: "Cell"
+        })
+    end
+
+    def self.normal
         Complexity.new({
             name: "Controller"
         })
