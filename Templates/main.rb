@@ -13,10 +13,22 @@ def generate_view_controller(template, complexity, source_folder, destination_fo
     generator.save "#{destination_folder}/___FILEBASENAME___ViewController.swift"
 end
 
+def generate_view_model(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___ViewModel.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___ViewModel.swift"
+end
+
+def generate_view(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___View.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___View.swift"
+end
+
 def generate(template, complexity)
     source_folder = "#{RESOURCES}/Templates"
     destination_folder = "#{PATH}/#{template.name}.xctemplate/#{complexity.name}"
     generate_view_controller(template, complexity, source_folder, destination_folder)
+    generate_view_model(template, complexity, source_folder, destination_folder)
+    generate_view(template, complexity, source_folder, destination_folder)
 end
 
 def generate_info_plist(template)ma

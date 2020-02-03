@@ -10,22 +10,15 @@ import Components
 
 internal class ___VARIABLE_featureName___ViewController: UIViewController, StatefulViewProtocol {
 
+    // MARK: - Internal Properties
+
     internal var theView: ___VARIABLE_featureName___View {
         return self.view as! ___VARIABLE_featureName___View // swiftlint:disable:this force_cast
     }
 
-    // private let service: ___VARIABLE_featureName___ServiceProtocol
-    private let closeButton: UIButton
+    // MARK: - Life Cicle
 
-    // private var data: Any {
-    //    didSet {
-    //        updateView()
-    //    }
-    // }
-
-    internal init() { // service: ___VARIABLE_featureName___ServiceProtocol
-        // self.service = service
-        self.closeButton = UIButton(type: .custom)
+    internal init() {
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -34,28 +27,20 @@ internal class ___VARIABLE_featureName___ViewController: UIViewController, State
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Override Methods
+
     internal override func loadView() {
-        self.view = ___VARIABLE_featureName___View(frame: .zero)
-        self.theView.delegate = self
+        self.view = ___VARIABLE_featureName___View(frame: UIScreen.main.bounds)
     }
 
     internal override func viewDidLoad() {
         super.viewDidLoad()
         configureNavigationBar()
         configureViewState()
-        configureViewState()
         loadData()
     }
 
-    @objc internal func close() {
-
-    }
-
-    private func loadData() {
-
-    }
-
-    // MARK: - Private method
+    // MARK: - Private methods
 
     private func configureViewState() {
         self.loadingView = PlaceholderLoadingView()
@@ -70,15 +55,26 @@ internal class ___VARIABLE_featureName___ViewController: UIViewController, State
             navigationBar.barColor = Pallet.brandingColorPrimary100
             navigationBar.shadowImage = UIImage()
 
-            closeButton.theme(with: Style.Button.headerNegative)
-            closeButton.setTitle(IconLibrary.fechar.rawValue, for: .normal)
-            closeButton.setTitleColor(Pallet.negativeGreyscaleColor100, for: .normal)
-            closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
-            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: closeButton)
+            backButton = UIButton(type: .custom)
+            backButton.theme(with: Style.Button.headerNegative)
+            backButton.setTitle(IconLibrary.fechar.rawValue, for: .normal)
+            backButton.setTitleColor(Pallet.negativeGreyscaleColor100, for: .normal)
+            backButton.addTarget(self, action: #selector(pressBackButton), for: .touchUpInside)
+            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
         }
     }
 
+    private func loadData() {
+
+    }
+
     private func updateView() {
+
+    }
+
+    // MARK: - Action Button
+
+    @objc internal func pressBackButton() {
 
     }
 
