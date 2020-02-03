@@ -20,12 +20,19 @@ class Template
     include Initializable
 
     def self.types
-        [normal]
+        [files, controller]
     end
 
-    def self.normal
+    def self.files
         Template.new({
             name: "Files",
+            generate_io: false
+        })
+    end
+
+    def self.controller
+        Template.new({
+            name: "Controller",
             generate_io: false
         })
     end

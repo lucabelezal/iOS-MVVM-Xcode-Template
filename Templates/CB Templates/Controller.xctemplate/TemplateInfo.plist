@@ -43,17 +43,6 @@
 			<string>popup</string>
 			<key>Default</key>
 			<string>Controller+ViewModel+View</string>
-			<key>Values</key>
-			<array>
-			    <string>Controller+ViewModel+View</string>
-				<string>Controller</string>
-				<string>View</string>
-				<string>Cell</string>
-				<string>Coordinator</string>
-				<string>Service</string>
-				<string>Action</string>
-				<string>Router</string>
-			</array>
 		</dict>
 	</array>
 	<key>Platforms</key>
