@@ -38,12 +38,9 @@ internal class ___VARIABLE_featureName___CellView: UIView, CellViewModelOwner {
         fatalError("init(coder:) has not been implemented")
     }
 
-
     // MARK: - Private Methods
 
-    private func update() {
-   
-    }
+    private func update() {}
 
 }
 

@@ -35,12 +35,9 @@ internal class ___VARIABLE_featureName___View: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-
     // MARK: - Private Methods
 
-    private func update() {
-   
-    }
+    private func update() {}
 
 }
 
@@ -58,7 +55,6 @@ extension ___VARIABLE_featureName___View: ViewCodable {
             make.left.equalTo(self.layout.left)
             make.right.equalTo(self.layout.right)
         }
-        
     }
 
     internal func render() {

@@ -30,13 +30,11 @@ internal final class ___VARIABLE_featureName___Coordinator: Coordinator {
 
     // MARK: - Private Methods
 
-    private func initialFlow() {
-
-    }
+    private func initialFlow() {}
 
 }
 
-extension ___VARIABLE_featureName___Coordinator:___VARIABLE_featureName___EventProtocol {
+extension ___VARIABLE_featureName___Coordinator: ___VARIABLE_featureName___EventProtocol {
 
     func handle(action: ___VARIABLE_featureName___Action) {
         switch action {
@@ -44,5 +42,5 @@ extension ___VARIABLE_featureName___Coordinator:___VARIABLE_featureName___EventP
             router(NavigationTransition.back())
         }
     }
-    
+
 }

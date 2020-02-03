@@ -8,6 +8,4 @@
 
 import NetworkCore
 
-public protocol ___VARIABLE_featureName___ServiceProtocol {
-    
-}
+public protocol ___VARIABLE_featureName___ServiceProtocol {}

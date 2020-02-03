@@ -83,5 +83,5 @@ extension ___VARIABLE_featureName___ViewController: PlaceholderErrorViewDelegate
     internal func didTryAgain() {
         loadData()
     }
-
+   
 }
