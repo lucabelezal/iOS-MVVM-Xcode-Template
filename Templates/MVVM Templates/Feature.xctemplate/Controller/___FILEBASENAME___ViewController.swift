@@ -7,15 +7,14 @@
 //
 
 import Components
-import Entity
 
-internal class ___VARIABLE_moduleName___ViewController: UIViewController, StatefulViewProtocol {
+internal class ___VARIABLE_featureName___ViewController: UIViewController, StatefulViewProtocol {
 
-    internal var theView: ___VARIABLE_moduleName___View {
-        return self.view as! ___VARIABLE_moduleName___View // swiftlint:disable:this force_cast
+    internal var theView: ___VARIABLE_featureName___View {
+        return self.view as! ___VARIABLE_featureName___View // swiftlint:disable:this force_cast
     }
 
-    // private let service: ___VARIABLE_moduleName___ServiceProtocol
+    // private let service: ___VARIABLE_featureName___ServiceProtocol
     private let closeButton: UIButton
 
     // private var data: Any {
@@ -24,7 +23,7 @@ internal class ___VARIABLE_moduleName___ViewController: UIViewController, Statef
     //    }
     // }
 
-    internal init() { // service: ___VARIABLE_moduleName___ServiceProtocol
+    internal init() { // service: ___VARIABLE_featureName___ServiceProtocol
         // self.service = service
         self.closeButton = UIButton(type: .custom)
         super.init(nibName: nil, bundle: nil)
@@ -36,7 +35,7 @@ internal class ___VARIABLE_moduleName___ViewController: UIViewController, Statef
     }
 
     internal override func loadView() {
-        self.view = ___VARIABLE_moduleName___View(frame: .zero)
+        self.view = ___VARIABLE_featureName___View(frame: .zero)
         self.theView.delegate = self
     }
 
@@ -87,7 +86,7 @@ internal class ___VARIABLE_moduleName___ViewController: UIViewController, Statef
 
 // MARK: - Extensions
 
-extension TransactionDetailViewController: PlaceholderErrorViewDelegate {
+extension ___VARIABLE_featureName___ViewController: PlaceholderErrorViewDelegate {
 
     internal func didTryAgain() {
         loadData()
