@@ -32,7 +32,7 @@ class Template
 
     def self.controller
         Template.new({
-            name: "Controller",
+            name: "Controller+ViewModel+View",
             generate_io: false
         })
     end
