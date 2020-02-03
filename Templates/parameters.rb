@@ -25,7 +25,7 @@ class Template
 
     def self.normal
         Template.new({
-            name: "Feature",
+            name: "Files",
             generate_io: false
         })
     end

@@ -8,7 +8,7 @@
 
 import NetworkCore
 
-internal enum ___VARIABLE_featureName___Router: Requestable {
+internal enum ___VARIABLE_fileName___Router: Requestable {
 
     case example
 

@@ -9,7 +9,7 @@
 import Components
 import Coordinator
 
-internal final class ___VARIABLE_featureName___Coordinator: Coordinator {
+internal final class ___VARIABLE_fileName___Coordinator: Coordinator {
 
     // MARK: - Public Property
 
@@ -17,11 +17,11 @@ internal final class ___VARIABLE_featureName___Coordinator: Coordinator {
 
     // MARK: - Private Property
 
-    private let service: <#___VARIABLE_featureName___ServiceProtocol#>
+    private let service: <#___VARIABLE_fileName___ServiceProtocol#>
 
     // MARK: - Life Cycle
 
-    internal init(service: <#___VARIABLE_featureName___ServiceProtocol#>) {
+    internal init(service: <#___VARIABLE_fileName___ServiceProtocol#>) {
         self.service = service
         rootViewController = NavigationController()
 
@@ -34,9 +34,9 @@ internal final class ___VARIABLE_featureName___Coordinator: Coordinator {
 
 }
 
-extension ___VARIABLE_featureName___Coordinator: ___VARIABLE_featureName___EventProtocol {
+extension ___VARIABLE_fileName___Coordinator: ___VARIABLE_fileName___EventProtocol {
 
-    func handle(action: ___VARIABLE_featureName___Action) {
+    func handle(action: ___VARIABLE_fileName___Action) {
         switch action {
         case .back:
             router(NavigationTransition.back())

@@ -8,11 +8,11 @@
 
 import Components
 
-internal protocol ___VARIABLE_featureName___ViewModelProtocol {
+internal protocol ___VARIABLE_fileName___CellViewModelProtocol {
     var example: String { get }
 }
 
-internal struct ___VARIABLE_featureName___ViewModel: ___VARIABLE_featureName___ViewModelProtocol {
+internal struct ___VARIABLE_fileName___CellViewModel: ___VARIABLE_fileName___CellViewModelProtocol {
 
     internal var example: String
 

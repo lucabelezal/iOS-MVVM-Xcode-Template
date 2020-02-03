@@ -8,15 +8,15 @@
 
 import Components
 
-internal class ___VARIABLE_featureName___ViewController: UIViewController, StatefulViewProtocol {
+internal class ___VARIABLE_fileName___ViewController: UIViewController, StatefulViewProtocol {
 
     // MARK: - Private Property
 
-    private let service: <#___VARIABLE_featureName___ServiceProtocol#>
+    private let service: <#___VARIABLE_fileName___ServiceProtocol#>
 
     // MARK: - Life Cicle
 
-    internal init(service: <#___VARIABLE_featureName___ServiceProtocol#>) {
+    internal init(service: <#___VARIABLE_fileName___ServiceProtocol#>) {
         self.service = service
         super.init(nibName: nil, bundle: nil)
     }
@@ -29,7 +29,7 @@ internal class ___VARIABLE_featureName___ViewController: UIViewController, State
     // MARK: - Override Methods
 
     internal override func loadView() {
-        self.view = ___VARIABLE_featureName___View(frame: UIScreen.main.bounds)
+        self.view = ___VARIABLE_fileName___View(frame: UIScreen.main.bounds)
     }
 
     internal override func viewDidLoad() {
@@ -68,8 +68,8 @@ internal class ___VARIABLE_featureName___ViewController: UIViewController, State
 
     private func updateView() {
 
-        if let view = self.view as? ___VARIABLE_featureName___View {
-            // view.viewModel = ___VARIABLE_featureName___ViewModel()
+        if let view = self.view as? ___VARIABLE_fileName___View {
+            // view.viewModel = ___VARIABLE_fileName___ViewModel()
         }
     }
 
@@ -83,7 +83,7 @@ internal class ___VARIABLE_featureName___ViewController: UIViewController, State
 
 // MARK: - Extensions
 
-extension ___VARIABLE_featureName___ViewController: PlaceholderErrorViewDelegate {
+extension ___VARIABLE_fileName___ViewController: PlaceholderErrorViewDelegate {
 
     internal func didTryAgain() {
         loadData()

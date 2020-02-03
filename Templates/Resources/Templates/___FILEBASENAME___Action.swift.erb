@@ -8,15 +8,15 @@
 
 import Coordinator
 
-public protocol ___VARIABLE_featureName___EventProtocol {
-    func handle(action: ___VARIABLE_featureName___Action)
+public protocol ___VARIABLE_fileName___EventProtocol {
+    func handle(action: ___VARIABLE_fileName___Action)
 }
 
-public enum ___VARIABLE_featureName___Action: Event {
+public enum ___VARIABLE_fileName___Action: Event {
 
     case back
 
-    public func sendToHandler(_ handler: ___VARIABLE_featureName___EventProtocol) {
+    public func sendToHandler(_ handler: ___VARIABLE_fileName___EventProtocol) {
         handler.handle(action: self)
     }
 

@@ -8,11 +8,11 @@
 
 import Components
 
-internal class ___VARIABLE_featureName___View: UIView {
+internal class ___VARIABLE_fileName___View: UIView {
 
     // MARK: - Internal Properties
 
-    internal var viewModel: ___VARIABLE_featureName___ViewModelProtocol? {
+    internal var viewModel: ___VARIABLE_fileName___ViewModelProtocol? {
         didSet {
             update()
         }
@@ -41,7 +41,7 @@ internal class ___VARIABLE_featureName___View: UIView {
 
 }
 
-extension ___VARIABLE_featureName___View: ViewCodable {
+extension ___VARIABLE_fileName___View: ViewCodable {
 
     internal func buildHierarchy() {
         addView(contentView)

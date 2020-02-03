@@ -8,13 +8,13 @@
 
 import Components
 
-internal class ___VARIABLE_featureName___CellView: UIView, CellViewModelOwner {
+internal class ___VARIABLE_fileName___CellView: UIView, CellViewModelOwner {
 
     // MARK: - Internal Properties
 
     internal var isSelected: Bool
 
-    internal var viewModel: ___VARIABLE_featureName___CellViewModelProtocol? {
+    internal var viewModel: ___VARIABLE_fileName___CellViewModelProtocol? {
         didSet {
             update()
         }
@@ -44,7 +44,7 @@ internal class ___VARIABLE_featureName___CellView: UIView, CellViewModelOwner {
 
 }
 
-extension ___VARIABLE_featureName___CellView: ViewCodable {
+extension ___VARIABLE_fileName___CellView: ViewCodable {
 
     internal func configure() {
 

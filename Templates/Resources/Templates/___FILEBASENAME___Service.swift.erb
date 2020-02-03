@@ -8,7 +8,7 @@
 
 import NetworkCore
 
-public class ___VARIABLE_featureName___Service: ___VARIABLE_featureName___ServiceProtocol {
+public class ___VARIABLE_fileName___Service: ___VARIABLE_fileName___ServiceProtocol {
 
     internal let service: NetworkServiceProtocol
 

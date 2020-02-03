@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>CBFeature</string>
+	<string>CBFiles</string>
 	<key>Description</key>
-	<string>This generates a new Feature.</string>
+	<string>This generates a new File of CB MVVM</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the feature to create</string>
+			<string>The name of the file to create</string>
 			<key>Default</key>
 			<string></string>
 			<key>Identifier</key>
-			<string>featureName</string>
+			<string>fileName</string>
 			<key>Name</key>
-			<string>New Feature Name:</string>
+			<string>New File Name:</string>
 			<key>Required</key>
 			<string>YES</string>
 			<key>Type</key>
@@ -26,7 +26,7 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_featureName___</string>
+			<string>___VARIABLE_fileName___</string>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
@@ -36,9 +36,9 @@
 			<key>Identifier</key>
 			<string>complex</string>
 			<key>Name</key>
-			<string>Feature Complexity:</string>
+			<string>File Complexity:</string>
 			<key>Description</key>
-			<string>Type of a feature to generate - simple</string>
+			<string>Type of a file to generate</string>
 			<key>Type</key>
 			<string>popup</string>
 			<key>Default</key>
@@ -61,6 +61,6 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>This generates code for features.</string>
+	<string>This generates code for files.</string>
 </dict>
 </plist>
