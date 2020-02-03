@@ -49,6 +49,8 @@
 				<string>Cell</string>
 				<string>Coordinator</string>
 				<string>Service</string>
+				<string>Action</string>
+				<string>Router</string>
 			</array>
 		</dict>
 	</array>

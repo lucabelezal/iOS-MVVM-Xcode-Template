@@ -36,22 +36,46 @@ class Complexity
     include Initializable
 
     def self.types
-        [simple, normal]
+        [action, cell, controller, coordinator, router, service]
     end
 
     def self.default
-        normal
+        controller
     end
 
-    def self.simple
+    def self.action
+        Complexity.new({
+            name: "Action"
+        })
+    end
+
+    def self.cell
         Complexity.new({
             name: "Cell"
         })
     end
 
-    def self.normal
+    def self.controller
         Complexity.new({
             name: "Controller"
+        })
+    end
+
+    def self.coordinator
+        Complexity.new({
+            name: "Coordinator"
+        })
+    end
+
+    def self.router
+        Complexity.new({
+            name: "Router"
+        })
+    end
+
+    def self.service
+        Complexity.new({
+            name: "Service"
         })
     end
 

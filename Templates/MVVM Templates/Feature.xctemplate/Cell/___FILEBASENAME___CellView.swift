@@ -8,7 +8,11 @@
 
 import Components
 
-internal class ___VARIABLE_featureName___CellView: UIView {
+internal class ___VARIABLE_featureName___CellView: UIView, CellViewModelOwner {
+
+    // MARK: - Internal Properties
+
+    internal var isSelected: Bool
 
     internal var viewModel: ___VARIABLE_featureName___CellViewModelProtocol? {
         didSet {
@@ -16,10 +20,15 @@ internal class ___VARIABLE_featureName___CellView: UIView {
         }
     }
 
+    // MARK: - Private Properties
+
     private let contentView: UIView
 
+    // MARK: - Initialize Methods
+    
     internal override init(frame: CGRect) {
         contentView = UIView()
+        isSelected = false
         super.init(frame: frame)
         setupView()
     }
@@ -38,7 +47,7 @@ internal class ___VARIABLE_featureName___CellView: UIView {
 
 }
 
-extension ___VARIABLE_featureName___View: ViewCodable {
+extension ___VARIABLE_featureName___CellView: ViewCodable {
 
     internal func configure() {
 

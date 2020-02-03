@@ -10,13 +10,19 @@ import Components
 
 internal class ___VARIABLE_featureName___View: UIView {
 
+    // MARK: - Internal Properties
+
     internal var viewModel: ___VARIABLE_featureName___ViewModelProtocol? {
         didSet {
             update()
         }
     }
 
+    // MARK: - Private Properties
+
     private let contentView: UIView
+
+    // MARK: - Initialize Methods
 
     internal override init(frame: CGRect) {
         contentView = UIView()
@@ -39,10 +45,6 @@ internal class ___VARIABLE_featureName___View: UIView {
 }
 
 extension ___VARIABLE_featureName___View: ViewCodable {
-
-    internal func configure() {
-
-    }
 
     internal func buildHierarchy() {
         addView(contentView)

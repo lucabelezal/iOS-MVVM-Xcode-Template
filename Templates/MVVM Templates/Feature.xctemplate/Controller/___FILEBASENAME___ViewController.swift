@@ -10,12 +10,6 @@ import Components
 
 internal class ___VARIABLE_featureName___ViewController: UIViewController, StatefulViewProtocol {
 
-    // MARK: - Internal Properties
-
-    internal var theView: ___VARIABLE_featureName___View {
-        return self.view as! ___VARIABLE_featureName___View // swiftlint:disable:this force_cast
-    }
-
     // MARK: - Life Cicle
 
     internal init() {
@@ -43,25 +37,24 @@ internal class ___VARIABLE_featureName___ViewController: UIViewController, State
     // MARK: - Private methods
 
     private func configureViewState() {
-        self.loadingView = PlaceholderLoadingView()
-        self.loadingView?.presentedView.backgroundColor = self.view.backgroundColor
-        self.loadingView?.viewModel = PlaceholderLoadingViewModel(text: L10n.Wallet.stateLoading)
-        self.errorView = PlaceholderErrorView(frame: view.frame, delegate: self)
+        loadingView = PlaceholderLoadingView()
+        loadingView?.presentedView.backgroundColor = view.backgroundColor
+        loadingView?.viewModel = PlaceholderLoadingViewModel(text: L10n.Wallet.stateLoading)
+        errorView = PlaceholderErrorView(frame: view.frame, delegate: self)
     }
 
     private func configureNavigationBar() {
         if let navigationBar = navigationController?.navigationBar {
             navigationBar.theme(with: Style.NavigationBar.defaultHeader)
-            navigationBar.barColor = Pallet.brandingColorPrimary100
-            navigationBar.shadowImage = UIImage()
-
-            backButton = UIButton(type: .custom)
-            backButton.theme(with: Style.Button.headerNegative)
-            backButton.setTitle(IconLibrary.fechar.rawValue, for: .normal)
-            backButton.setTitleColor(Pallet.negativeGreyscaleColor100, for: .normal)
-            backButton.addTarget(self, action: #selector(pressBackButton), for: .touchUpInside)
-            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+            navigationBar.barColor = .clear
         }
+
+        let backButton = UIButton(type: .custom)
+        backButton.theme(with: Style.Button.headerNegative)
+        backButton.setTitle(IconLibrary.fechar.rawValue, for: .normal)
+        backButton.setTitleColor(Pallet.negativeGreyscaleColor100, for: .normal)
+        backButton.addTarget(self, action: #selector(pressBackButton), for: .touchUpInside)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
     }
 
     private func loadData() {
@@ -70,11 +63,14 @@ internal class ___VARIABLE_featureName___ViewController: UIViewController, State
 
     private func updateView() {
 
+        if let view = self.view as? ___VARIABLE_featureName___View {
+            // view.viewModel = ___VARIABLE_featureName___ViewModel()
+        }
     }
 
     // MARK: - Action Button
 
-    @objc internal func pressBackButton() {
+    @objc private func pressBackButton() {
 
     }
 

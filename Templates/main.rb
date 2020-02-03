@@ -33,6 +33,26 @@ def generate_cell_view(template, complexity, source_folder, destination_folder)
     generator.save "#{destination_folder}/___FILEBASENAME___CellView.swift"
 end
 
+def generate_action(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___Action.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___Action.swift"
+end
+
+def generate_coordinator(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___Coordinator.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___Coordinator.swift"
+end
+
+def generate_router(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___Router.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___Router.swift"
+end
+
+def generate_service(template, complexity, source_folder, destination_folder)
+    generator = Generator.new("#{source_folder}/___FILEBASENAME___Service.swift.erb", template, complexity)
+    generator.save "#{destination_folder}/___FILEBASENAME___Service.swift"
+end
+
 def generate(template, complexity)
     source_folder = "#{RESOURCES}/Templates"
     destination_folder = "#{PATH}/#{template.name}.xctemplate/#{complexity.name}"
@@ -41,6 +61,10 @@ def generate(template, complexity)
     generate_view(template, complexity, source_folder, destination_folder)
     generate_cell_view_model(template, complexity, source_folder, destination_folder)
     generate_cell_view(template, complexity, source_folder, destination_folder)
+    generate_action(template, complexity, source_folder, destination_folder)
+    generate_coordinator(template, complexity, source_folder, destination_folder)
+    generate_router(template, complexity, source_folder, destination_folder)
+    generate_service(template, complexity, source_folder, destination_folder)
 end
 
 def generate_info_plist(template)ma
