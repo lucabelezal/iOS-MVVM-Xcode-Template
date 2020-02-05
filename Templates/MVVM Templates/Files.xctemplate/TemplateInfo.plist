@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>CBFiles</string>
+	<string>MVVMFiles</string>
 	<key>Description</key>
-	<string>This generates a new File of CB MVVM</string>
+	<string>This generates a new File of MVVM</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
