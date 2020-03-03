@@ -6,7 +6,7 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import Coordinator
+import CoordinatorKit
 
 public protocol ___VARIABLE_fileName___EventProtocol {
     func handle(action: ___VARIABLE_fileName___Action)

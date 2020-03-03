@@ -6,8 +6,8 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import Components
-import Coordinator
+import CoordinatorKit
+import UIKit
 
 internal final class ___VARIABLE_fileName___Coordinator: Coordinator {
 

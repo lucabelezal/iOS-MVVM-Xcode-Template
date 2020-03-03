@@ -6,7 +6,8 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import Components
+import Common
+import UIKit
 
 internal class ___VARIABLE_fileName___ViewController: UIViewController, StatefulViewProtocol {
 
@@ -40,27 +41,6 @@ internal class ___VARIABLE_fileName___ViewController: UIViewController, Stateful
     }
 
     // MARK: - Private methods
-
-    private func configureViewState() {
-        loadingView = PlaceholderLoadingView()
-        loadingView?.presentedView.backgroundColor = view.backgroundColor
-        loadingView?.viewModel = PlaceholderLoadingViewModel(text: L10n.Wallet.stateLoading)
-        errorView = PlaceholderErrorView(frame: view.frame, delegate: self)
-    }
-
-    private func configureNavigationBar() {
-        if let navigationBar = navigationController?.navigationBar {
-            navigationBar.theme(with: Style.NavigationBar.defaultHeader)
-            navigationBar.barColor = .clear
-        }
-
-        let backButton = UIButton(type: .custom)
-        backButton.theme(with: Style.Button.headerNegative)
-        backButton.setTitle(IconLibrary.fechar.rawValue, for: .normal)
-        backButton.setTitleColor(Pallet.negativeGreyscaleColor100, for: .normal)
-        backButton.addTarget(self, action: #selector(pressBackButton), for: .touchUpInside)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
-    }
 
     private func loadData() {
 
