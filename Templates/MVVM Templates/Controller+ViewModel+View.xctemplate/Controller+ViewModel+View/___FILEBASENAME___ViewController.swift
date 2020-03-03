@@ -6,7 +6,8 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import Components
+import Common
+import UIKit
 
 internal class ___VARIABLE_fileName___ViewController: UIViewController, StatefulViewProtocol {
 
